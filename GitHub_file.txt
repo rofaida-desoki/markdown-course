@@ -1,2 +1,4 @@
 GitHub is an online hosting platform for version control.
 While Git is software on your desktop to track your files/repositories.
+
+Adding a conclusion to GitHub.txt file - in the feature branch
