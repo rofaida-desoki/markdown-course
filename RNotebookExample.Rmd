@@ -1,0 +1,50 @@
+---
+title: "code-markdown"
+output: html_document
+date: "2024-05-01"
+editor_options: 
+  chunk_output_type: console
+---
+
+download.file(url="https://raw.githubusercontent.com/cambiotraining/reproducibility-training/master/data/gapminder_data.csv", destfile="data/gapminder_data.csv")
+
+
+```{r load-data, message=FALSE}
+#load tidyverse library
+library(tidyverse) # used for data manipulation
+library(rmarkdown) # used for paged_table function
+library(kableExtra) # used for table
+library(ggpubr) #used for ggarrange function 
+
+#read file into R
+pop_data <- read_csv("data/gapminder_data.csv")
+
+#create a table with data from European countries in 2007 showing the countries 
+#with the largest life expectancy at the top 
+euro_data_tbl <- pop_data %>% 
+                    filter(continent == "Europe" & year == 2007) %>% 
+                    select(-continent, -year) %>% 
+                    arrange(desc(lifeExp)) %>% 
+                    rename(Country = country, "Population Size" = pop, 
+                      "Life Expectancy" = lifeExp, "GDP" = gdpPercap)
+    
+head(euro_data_tbl)
+```
+
+```{r kbl-first}
+euro_data_tbl %>% 
+          kbl()
+```
+
+```{r kbl}
+euro_data_tbl %>% 
+          kbl() %>%
+          kable_styling(bootstrap_options = c("striped"), full_width = F, position = "float_right")
+
+
+```
+
+```{r paged-table}
+paged_table(euro_data_tbl)
+```
+

@@ -1,0 +1,91 @@
+---
+title: "1,500 scientists lift the lid on reproducibility"
+author: Monya Baker
+date: 25 May 2016
+output:
+  html_document:
+    toc: true
+    toc_float: true
+---
+\
+# Survey sheds light on the 'crisis' rocking research
+
+**More than 70% of researchers have tried and failed to reproduce another scientist's experiments.** and more than half have failed to reproduce their own experiments. There are some of the telling figures that emerged from *Nature*'s survey of 1,576 researchers who took a brief online questionnaire on reproducbility in research.
+
+In this survey [^1], you will find more. As shown in the photo \
+![photo of GIP](https://link.springer.com/article/10.1007/s00125-023-05956-x/figures/4)
+
+# Markdown {#chunk-5}   
+ 
+## Big
+ 
+### small
+ 
+#### smaller
+ 
+###### smallest
+ 
+ **bolt text**
+ __bold text__
+
+*should be italics*  
+_similarly_\
+H~2~O\
+~~this is struck out~~
+``\
+
+- [ ] \ undone yet  
+- [ ] \ unchecked item  
+- [X] \ done item
+\
+\
+\
+
+| column 1  | column 2  |
+| -------  | :-------:  |
+| item 1, 2   | item 3, 4  |
+| core 1,2  | core 3, 4  |
+
+\
+\
+```
+print("Hello world")
+x <- 1+89
+print(x)
+```
+Previous one is just a code block
+
+Next is R code block
+```{r}
+print("Hello world")
+x <- 1+89
+print(x)
+```
+
+
+
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+
+[jump-to](#chunk-5)
+
+
+[^1]: this survey can be downloaded [here] ()
