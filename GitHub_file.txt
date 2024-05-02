@@ -1,0 +1,2 @@
+GitHub is an online hosting platform for version control.
+While Git is software on your desktop to track your files/repositories.
